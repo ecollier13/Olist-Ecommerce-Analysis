@@ -2,6 +2,12 @@
    OLIST ANALYSIS — Clean Load + Typed Dates + Clean Schema
    Source CSV format confirmed: M/D/YYYY H:MM (24-hour clock)
    Example: 10/2/2017 10:56, 10/18/2017 0:00
+
+
+   NOTE:
+   This script requires the Olist dataset CSV files.
+   Update <PATH_TO_CSV> to point to your local dataset directory
+   before execution.
    ============================================================ */
 
 -- 0) Create + select database
