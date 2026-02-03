@@ -36,7 +36,7 @@ CREATE TABLE orders (
   INDEX idx_orders_customer (customer_id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-LOAD DATA LOCAL INFILE 'C:/Users/lenovo/Documents/Project 3/olist_orders_dataset.csv'
+LOAD DATA LOCAL INFILE '<PATH_TO_CSV>/olist_orders_dataset.csv'
 INTO TABLE orders
 FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
@@ -102,7 +102,7 @@ CREATE TABLE customers (
   INDEX idx_customers_unique (customer_unique_id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-LOAD DATA LOCAL INFILE 'C:/Users/lenovo/Documents/Project 3/olist_customers_dataset.csv'
+LOAD DATA LOCAL INFILE '<PATH_TO_CSV>/olist_customers_dataset.csv'
 INTO TABLE customers
 FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
@@ -131,7 +131,7 @@ CREATE TABLE order_items (
   INDEX idx_order_items_seller (seller_id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-LOAD DATA LOCAL INFILE 'C:/Users/lenovo/Documents/Project 3/olist_order_items_dataset.csv'
+LOAD DATA LOCAL INFILE '<PATH_TO_CSV>/olist_order_items_dataset.csv'
 INTO TABLE order_items
 FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
@@ -163,7 +163,7 @@ CREATE TABLE order_payments (
   INDEX idx_order_payments_order (order_id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-LOAD DATA LOCAL INFILE 'C:/Users/lenovo/Documents/Project 3/olist_order_payments_dataset.csv'
+LOAD DATA LOCAL INFILE '<PATH_TO_CSV>/olist_order_payments_dataset.csv'
 INTO TABLE order_payments
 FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
@@ -192,7 +192,7 @@ CREATE TABLE order_reviews (
   INDEX idx_order_reviews_order (order_id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-LOAD DATA LOCAL INFILE 'C:/Users/lenovo/Documents/Project 3/olist_order_reviews_dataset.csv'
+LOAD DATA LOCAL INFILE '<PATH_TO_CSV>/olist_order_reviews_dataset.csv'
 INTO TABLE order_reviews
 FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
