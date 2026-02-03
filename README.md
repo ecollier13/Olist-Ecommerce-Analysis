@@ -23,15 +23,27 @@ Rather than focusing on dashboards alone, this project emphasizes:
 8. Do installment payments correlate with higher order values?
 
 ---
+##  Key Results
 
-##  Key Findings
-- Order volume and revenue grew strongly from early 2017 through mid-2018.
-- Average order value remained relatively stable, indicating growth was driven primarily by increased order volume rather than higher spend per order.
-- Delivery performance improved over time, with average delivery times decreasing into 2018.
-- Over 90% of delivered orders arrived on or before the estimated delivery date.
-- Late deliveries are strongly associated with lower review scores, with severely late orders averaging review scores below 2.
-- Credit cards dominate payments (approximately 74% of transactions), followed by boleto.
-- Orders with higher installment counts tend to have higher total order values.
+- **Strong growth in orders and revenue (2017–mid-2018):**  
+  Order volume and total revenue increased significantly over time, while average order value remained relatively stable. This indicates that growth was driven primarily by higher transaction volume rather than increased customer spend per order.
+
+- **Delivery performance improved as the platform matured:**  
+  Average delivery time peaked at 15–17 days during late 2017 and early 2018, then improved steadily to under 8 days by mid-2018, reflecting meaningful operational and logistics improvements.
+
+- **Most orders were delivered on time or early:**  
+  Over 90% of delivered orders arrived early or on time. Late deliveries accounted for fewer than 7% of orders, with approximately 3% delayed by more than 8 days.
+
+- **Late delivery is strongly associated with lower customer satisfaction:**  
+  Orders delivered on time or early averaged review scores above 4, while orders delivered more than 8 days late averaged review scores below 2, demonstrating a clear negative relationship between delivery delays and customer sentiment.
+
+- **Payment behavior is dominated by credit cards:**  
+  Credit cards accounted for approximately 74% of all payments, followed by boleto at around 19%, highlighting the importance of card-based and deferred payment options in the Brazilian e-commerce market.
+
+- **Installment payments enable higher-value purchases:**  
+  Orders with higher installment counts were associated with substantially higher average order values, suggesting that installment options play a key role in supporting larger customer purchases.
+  
+> Full SQL queries supporting these findings can be found in `sql/03_analysis.sql`.
 
 ---
 
@@ -65,19 +77,18 @@ All anomalies were investigated and addressed prior to analysis.
 ---
 
 ##  Repository Structure
+
+```text
 olist-ecommerce-analysis/
-│
 ├── README.md
 ├── LICENSE
 ├── sql/
 │   ├── 01_schema_load.sql
 │   ├── 02_data_validation.sql
 │   └── 03_analysis.sql
-│
 └── notes/
     └── executive_summary.md
-
-
+```
 ---
 
 ##  Business Value
