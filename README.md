@@ -4,6 +4,7 @@
 This project analyzes transactional, customer, payment, delivery, and review data from **Olist**, a Brazilian e-commerce marketplace.
 
 The goal is to answer key business questions related to growth, customer behavior, delivery performance, and customer satisfaction using **SQL-based analysis**.
+The analysis focuses on delivered orders only where revenue and customer outcomes are fully observable.
 
 Rather than focusing on dashboards alone, this project emphasizes:
 - Data quality and validation
@@ -73,6 +74,16 @@ All anomalies were investigated and addressed prior to analysis.
 - CASE-based business logic
 - Reusable analytical queries
 - Data validation and integrity checks
+
+##  Data Source & Setup
+
+This project uses the Olist Brazilian E-Commerce Dataset (Kaggle).
+CSV files are not included in the repository.
+
+To run the schema and load script locally, download the dataset and
+update the `<PATH_TO_CSV>` placeholders in `sql/01_schema_load.sql`
+to point to your local dataset directory.
+
 
 ---
 
